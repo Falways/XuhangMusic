@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5绚丽动画音乐播放效果</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+<script src="js/mylrc.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/myjs.js" ></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<style>
+	#micList {
+	width: 300px;
+	margin-left: auto;
+	border-radius: 10px 10px 10px 10px;
+	margin-top: 20px;
+	border: 1px solid white;
+	margin-right: auto;
+	box-shadow: 2px 2px 2px yellow;
+}
+
+ul {
+	list-style-type: none;
+	border: 0px solid white;
+	width: 200px;
+}
+
+ul li {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	border: 0px solid yellow;
+	text-align: left;
+	margin-top: 5px;
+	text-shadow: 3px 3px 2px white;
+	font-size: 25px;
+}
+
+ul li img {}
+
+.change {
+	color: #808080;
+	text-shadow: 3px 3px 2px #808080;
+}
+
+
+}
+);</style>
+<script type="text/javascript">
+	
+	function myFunction(event){
+	
+		var txt = $("#lrc_content").val();
+		parseLyric(txt);
+	}	
+	
+	
+</script>
+</head>
+<body>
+	
+<h2 style="color: #FFFF00;">♫XuHangOnLineMusic♫</h2>
+<form action="" target="_parent" method="post" style="margin-top: 5%;">
+		<div class="input-group" style="width: 20%;margin-left: 5%;">
+    	<input style="height: 30px;width: 70%;" type="text"  class="form-control"><button style="height: 30px;width: 30%;border: none;" class="btn-info">搜索</button>
+		</div>
+</form>
+<br>
+<br>
+<!--<audio  src="http://fs.w.kugou.com/201802261542/c6ab19dbfb293c52ae50f7f1e9787a76/G011/M05/0B/05/q4YBAFUOaRqANrocACqm8frTi7o558.mp3"," ontimeupdate="myFunction(event)" id="audioDemo" controls="controls" loop="loop" preload="auto">亲 您的浏览器不支持html5的audio标签</audio>-->
+<audio src="music/yangcong.mp3" ontimeupdate="myFunction(event)" id="audio" controls="controls" loop="loop" preload="auto">亲 您的浏览器不支持html5的audio标签</audio>
+<div style="margin-top: 5%;" >
+	<table style="margin-left: 25%;">
+		<tr>
+			<td>
+				<img src="http://imge.kugou.com/stdmusic/20160909/20160909010253299211.jpg" style="" align="left" width="150" height="150"/>
+			</td>
+			<td width="100%">
+				<font id="lrcfont" size="12px" color="aquamarine"></font>
+			</td>
+		</tr>
+		
+
+	</table>
+	
+	
+	<p id="pid"></p>
+<textarea id="lrc_content" name="textfield" cols="70" rows="10" style="display: none;">
+[00:03.00]洋葱
+[00:06.00]演唱：平安
+[00:09.00]
+[00:11.38]如果你眼神能够为我片刻的降临
+[00:21.23]如果你能听到心碎的声音
+[00:28.88]盘底的洋葱像我永远是配角戏
+[00:35.74]偷偷的看着你偷偷的隐藏着自己
+[00:43.48]
+[00:44.90]如果你愿意一层一层
+[00:48.46]一层的剥开我的心
+[00:52.66]你会发现你会讶异
+[00:56.40]你是我最压抑最深处的秘密
+[01:00.26]如果你愿意一层一层
+[01:03.69]一层的剥开我的心
+[01:07.76]你会鼻酸你会流泪
+[01:11.60]只要你能听到我看到我的全心全意
+[01:18.30]
+[01:19.11]如果你愿意一层一层
+[01:22.57]一层的剥开我的心
+[01:26.66]你会发现你会讶异
+[01:30.41]你是我最压抑最深处的秘密
+[01:34.48]如果你愿意一层一层
+[01:37.58]一层的剥开我的心
+[01:41.51]你会鼻酸你会流泪
+[01:45.15]只要你能听到我看到我的全心全意
+[01:53.55]
+[01:55.65]你会鼻酸你会流泪
+[01:59.84]只要你能听到我看到我的全心全意
+</textarea>
+
+</body>
+</html>
